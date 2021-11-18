@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	    <script type="text/javascript">
+	    	$(document).ready(function(){
+           
+              $("#slideUp").click(function(){
+              	$("div").slideUp();
+              });
+
+                 $("#slidein").click(function(){
+              	$("div").slideDown();
+              });
+
+                   $("#slideToggle").click(function(){
+              	$("div").slideToggle();
+              });
+	    	});
+	    </script>
+		<style type="text/css">
+		div
+		{
+			width:100px;
+			height:100px;
+			background-color:blue;
+		}
+	</style>
+</head>
+<body>
+     
+<div>
+    	
+    </div>
+    <br>
+    <button id="slideUp">Slide Up</button>
+    <button id="slidein">Slide down</button>
+    <button id="slideToggle">Slide Toggle</button>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+</head>
+<body>
+ <p>This is paragraph.</p>
+
+ <h1>this is a heading</h1>
+</body>
+</html>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("p").mouseenter(function(){
+			alert("this is p tag");
+		});
+
+			$("h1").mouseleave(function(){
+			alert("this is h1 tag");
+		});
+	});
+</script>

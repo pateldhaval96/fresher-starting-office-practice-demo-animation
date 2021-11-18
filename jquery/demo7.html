@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$("#prependtext").click(function(){
+				$("p").prepend("<b>text format</b>.");
+			});
+
+			   $("#prependlist").click(function(){
+				$("ol").prepend("<li>rasid</li>");
+			});
+
+		});
+	</script>
+</head>
+<body>
+     <p>text formet</p>
+
+   <ol>
+   	  <li>rohan</li>
+   	  <li>roshan</li>
+   	  <li>rajesh</li>
+   </ol>
+
+   <button id="prependtext">prepend text</button>
+   <button id="prependlist">prepend list</button>
+</body>
+</html>

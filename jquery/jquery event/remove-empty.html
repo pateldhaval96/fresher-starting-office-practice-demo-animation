@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<style type="text/css">
+		div
+		{
+			width:300px;
+			height:300px;
+			background-color:lime;
+		}
+	</style>
+</head>
+<body>
+ 
+  <div>
+  	 <h1>This is heading</h1>
+  	 <p>This is paraghraph</p>
+  </div>
+  <br>
+  <button class="empty">empty</button>
+  <button class="remove">remove</button>
+</body>
+</html>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".remove").click(function(){
+			$("div").remove();
+		});
+
+			$(".empty").click(function(){
+			$("div").empty();
+		});
+	});
+</script>

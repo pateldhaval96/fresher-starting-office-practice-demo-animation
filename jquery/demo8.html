@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#remove").click(function(){
+				$("p").remove();
+			});
+
+				$("#Empty").click(function(){
+				$("div").empty();
+			});
+		});
+	</script>
+	<style type="text/css">
+		div
+		{
+			width:200px;
+			height:200px;
+			background-color:lime;
+		}
+	</style>
+</head>
+<body>
+     <div>
+     	<p>This is a paragraph</p>
+     	<p>This is a paragraph</p>
+     	<p>This is a paragraph</p>
+     	<h1>This is a paragraph</h1>
+     </div>
+     <br>
+     <button id="remove">Remove</button>
+     <button id="Empty">Empty</button>
+</body>
+</html>

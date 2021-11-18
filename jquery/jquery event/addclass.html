@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<style type="text/css">
+		body {
+  height: 200vh;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.header {
+  position:sticky;
+  top:0;
+  /*z-index: 1000;*/
+	height: 100px;
+   width: 100%; 
+	/*background: rgba(34,34,34,0.25);*/
+	background-color:red;
+/*	padding: 18px;
+	-webkit-transition: all ease-out .5s;
+  -moz-transition: all ease-out .5s;
+  -o-transition: all ease-out .5s;
+  transition: all ease-out .5s;*/
+}
+
+.active {
+  /*background-color: rgba(34,34,34,0.8);*/
+  background-color:black;
+}
+	</style>
+</head>
+<body>
+ <div class="header">
+ 	
+ </div>
+</body>
+</html>
+<script type="text/javascript">
+	
+	$(function() {
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 50) {
+            $(".header").addClass("active");
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+           $(".header").removeClass("active");
+        }
+    });
+});
+</script>

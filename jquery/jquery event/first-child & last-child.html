@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <p>list 1</p>
+  	  <ul>
+  	  	 <li>Coffee</li>
+  	  	 <li>Milk</li>
+  	  	 <li>tea</li>
+  	  </ul>
+  
+  <p> list 2 </p>
+  	  <ul>
+  	  	 <li>Coffee</li>
+  	  	 <li>Milk</li>
+  	  	 <li>tea</li>
+  	  </ul>
+
+  	  <button>Click me</button>
+  
+</body>
+</html>
+<script type="text/javascript">
+	$(document).ready(function(){
+      $("button").click(function(){
+      	$('ul li:first-child').css({"background-color":"red","color":"yellow","text-align":"center","font-size":"22px"});
+
+
+      	$('ul li:last-child').css({"background-color":"lime","color":"yellow","text-align":"center","font-size":"22px"});
+
+      	$("ul li").append(" hello");
+
+      	$("ul li").prepend(" 123 ");
+      });
+	});
+</script>

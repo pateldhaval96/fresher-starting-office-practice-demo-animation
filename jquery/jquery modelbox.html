@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<style type="text/css">
+		.model
+		{
+			width:200px;
+			height:200px;
+			border:1px solid black;
+			margin:0 auto;
+			margin-top:140px;
+			display:none;
+		}
+		.model p
+		{
+			text-align:center;
+			margin-top:70px;
+		}
+		.model a
+		{
+			margin-left:70px;
+		}
+	</style>
+</head>
+<body>
+<button>Click Me</button>
+<br>
+<br>
+<div class="model">
+	<p>How Are You</p>
+	<a href="">Close</a>
+	
+</div>
+</body>
+</html>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$(".model").toggle();
+		});
+	});
+</script>

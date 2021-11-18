@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<style type="text/css">
+	.box
+	{
+		width:100%;
+		height:500px;
+		border:1px solid black;
+	}
+	button
+	{
+		margin-top:15px; 
+	}
+	.image2,.image3,.image4
+	{
+		display:none;
+	}
+</style>
+<body>
+  <div class="box">
+  	    <div class="container">
+
+  	    	<div class="row">
+  	    		<div class="col-lg-6">
+  	    			  <img src="image/str1.png" class="img-fluid image1">
+  	    			  <img src="image/str2.png" class="img-fluid image2">
+  	    			  <img src="image/str3.png" class="img-fluid image3">
+  	    		</div>
+  	    		<div class="col-lg-6">
+  	    			 <button class="btn btn-primary button1">Button 1</button> <br>
+  	    			 <button class="btn btn-primary button2">Button 2</button> <br>
+  	    			 <button class="btn btn-primary button3">Button 3</button>
+  	    		</div>
+  	    	</div>
+  	    	
+  	    </div>
+  </div>
+</body>
+</html>
+<script type="text/javascript">
+	 $(document).ready(function(){
+	 	$(".button1").click(function(){
+	 		 $(".image2").css("display","none");
+	 		 $(".image3").css("display","none");
+	 		 $(".image1").css("display","inline");
+          });
+
+	 		$(".button2").click(function(){
+	 	    $(".image1").css("display","none");
+	 		$(".image2").css("display","inline");
+	 	    $(".image3").css("display","none");
+	 	});
+
+	 		$(".button3").click(function(){
+	 	    $(".image2").css("display","none");
+	 	    $(".image1").css("display","none");
+	 	    $(".image3").css("display","inline");
+	 	});	
+
+
+	 	  // $(".button1").click(function(){
+	 	  //   $(".image4").css("display","none");
+	 	  // $(".image1").css("display","block");
+     //    });
+        
+	  
+	 	//   $(".button1").click(function(){
+	 	// 	 $(".image1").hide();
+   //          $(".image2").show();
+	 	// });
+    
+   //        $(".button2").click(function(){
+	 	// 	 $(".image2").hide();
+   //          $(".image3").show();
+	 	// });
+
+   //         $(".button3").click(function(){
+	 	// 	 $(".image3").hide();
+   //          $(".image4").show();
+	 	// });
+
+   //          $(".button1").click(function(){
+	 	// 	 $(".image4").hide();
+   //          $(".image1").show();
+	 	// });
+
+
+	 });
+</script>

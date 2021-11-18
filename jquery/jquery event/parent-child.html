@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<style type="text/css">
+		div
+		{
+			width:100%;
+			height:auto;
+			border:1px solid black;
+
+		}
+		section
+		{
+			width:100%;
+			height:auto;
+			border:1px solid green;
+
+		}
+		.dhaval
+		{
+			width:100%;
+			height:auto;
+			border:1px solid red;
+
+		}
+	</style>
+</head>
+<body>
+ <div>
+ 	<p>this is paragraph</p>
+ 	<h1>this is a heading</h1>
+ 	<p>this is paragraph</p>
+ 	<h1>this is a heading</h1>
+ 	<p>this is paragraph</p>
+ </div>
+<br>
+<section>
+ 	<p>this is paragraph</p>
+ 	<h1>this is a heading</h1>
+ 	<p>this is paragraph</p>
+ 	<h1>this is a heading</h1>
+ 	<p>this is paragraph</p>
+ </section>
+
+ <dhaval class="dhaval">
+
+ 	<p>this is paragraph</p>
+ 	<h1>this is a heading</h1>
+ 	<p>this is paragraph</p>
+ 	<h1>this is a heading</h1>
+ 	<p>this is paragraph</p>
+ 	<button>Click me</button>
+ </dhaval>
+
+</body>
+</html>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("div > p").css({"background-color":"red" , "font-size":"40px" , "text-align":"center"});
+
+		$("div > h1").css({"background-color":"blue" , "color":"white","font-size":"40px"})
+
+		// section method 2
+
+		$("section").children("p").css({"background-color":"lime" , "color":"white" , "font-size":"40px"})
+
+		$("section").children("h1").css({"background-color":"orange","text-align":"center"})
+
+		$("button").click(function(){
+			// $("*").css({"background-color":"red"})  
+			$("*").hide();
+		});
+	});
+</script>

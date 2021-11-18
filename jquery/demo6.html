@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		   $(document).ready(function(){
+           $("#appendtext").click(function(){
+           	$("p").append("<b> append text </b>");
+           });
+
+              $("#appendlist").click(function(){
+           	$("ol").append("<li>Rakesh</list>");
+           });
+
+		   });
+	</script>
+</head>
+<body>
+   <p>text formet</p>
+
+   <ol>
+   	  <li>rohan</li>
+   	  <li>roshan</li>
+   	  <li>rajesh</li>
+   </ol>
+
+   <button id="appendtext">append text</button>
+   <button id="appendlist">append list</button>
+</body>
+</html>

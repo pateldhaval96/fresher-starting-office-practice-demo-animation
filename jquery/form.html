@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style type="text/css">
+  	.icon
+  	{
+  		position:relative;
+  	}
+  	.icon input[type=password]
+  	{
+  		padding-left:0px; 
+  	}
+  	.icon i
+  	{
+  		position:absolute;
+  		left:1050px;
+  		top:8px;
+   }
+   @media only screen and (min-width: 320px) and (max-width: 767px)
+   {
+   	    	 .icon i 
+   	 {
+    position: absolute;
+    left:350px;
+    top: 8px;
+}
+   }
+    @media only screen and (min-width: 768px) and (max-width: 991px)
+    {
+    	 .icon i 
+   	 {
+    position: absolute;
+    left:650px;
+    top: 8px;
+}
+    }
+@media only screen and (min-width: 992px) and (max-width: 1199px)
+   {
+   	 .icon i 
+   	 {
+    position: absolute;
+    left: 870px;
+    top: 8px;
+}
+
+   }
+  
+  </style>
+</head>
+<body>
+<div class="container">
+  
+  <form action="/action_page.php">
+    
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <div class="icon">
+      <input type="password" class="form-control " id="pwd" placeholder="Enter password" name="pswd" >
+    
+      <i class="fa fa-eye toggle-password" id="eyes1" aria-hidden="true"></i>
+  </div>
+    </div>
+   
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+	$(document).ready(function(){
+       $(".toggle-password").click(function(){
+       	$(this).toggleClass("fa-eye fa-eye-slash");
+
+       	var input =$(".form-control");
+       	if (input.attr("type")=="password") {
+       		input.attr("type","text");
+       	}
+       	else
+       	{
+       		input.attr("type","password");
+       	}
+       });
+	});
+</script>

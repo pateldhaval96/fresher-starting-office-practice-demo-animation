@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		$("#fadeOut").click(function(){
+    			$("div").fadeOut(5000);
+    		});
+
+    		 	$("#fadeIn").click(function(){
+    			$("div").fadeIn(2000);
+    		});
+
+    		 	 $("#fadeToggle").click(function(){
+    			$("div").fadeToggle(3000);
+    		});
+    	});
+    </script>
+	<style type="text/css">
+		div
+		{
+			width:100px;
+			height:100px;
+			background-color:red;
+		}
+	</style>
+</head>
+<body>
+    <div>
+    	
+    </div>
+    <br>
+    <button id="fadeOut">Fade Out</button>
+    <button id="fadeIn">Fade In</button>
+    <button id="fadeToggle">Fade Toggle</button>
+</body>
+</html>

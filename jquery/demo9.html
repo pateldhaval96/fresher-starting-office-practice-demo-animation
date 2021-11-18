@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").animate({
+      left: '350px',
+      
+      opacity: '0.5',
+      height: '250px',
+      width: '250px'
+    });
+  });
+});
+</script>
+    <style type="text/css">
+    	div
+    	{
+    		width: 200px;
+    		height:200px;
+    		background-color:red;
+    		position: absolute;
+    	}
+    </style>
+</head>
+<body>
+	<br>
+ <button>Click me</button> 
+ <br>
+ <br>
+<div>
+	
+</div>
+
+</body>
+</html>
